@@ -12,8 +12,8 @@ loginRouter.get('/',function(req,res){
 loginRouter.get("/check",function(req,res){
     //@deprecated since 4.11 Use either req.params, req.body or req.query, as applicable.Part #2 10
     var checkuser = {
-        uid:req.params("uid"),
-        pwd:req.params("pwd")
+        uid:req.param("uid"),
+        pwd:req.param("pwd")
     }; 
      
     console.log(checkuser);
