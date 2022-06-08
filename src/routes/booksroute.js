@@ -62,9 +62,9 @@ booksRouter.get('/:id',function(req,res){
 
 
 
-
+//instead of post can use delete #part2 point 9
 //router to delete book
-booksRouter.post('/delete', function (req, res) {
+booksRouter.delete('/delete', function (req, res) {
 
     const id = req.body.id;  
 
@@ -92,9 +92,9 @@ booksRouter.post('/edit', function (req, res) {
 })
 
 
-
+//to update contents update can use in place of post #part2 point 9
 //router to update book
-booksRouter.post('/update', function (req, res) {
+booksRouter.update('/update', function (req, res) {
 
     bookdata.findByIdAndUpdate(req.body.id, { $set: req.body }, function (err, data) {
         if (err) {
