@@ -17,8 +17,7 @@ signupRouter.get("/adduser",function(req,res){
     console.log(newuser);
     console.log(user);
     user.push(newuser);
-    append_data (user , newuser);
-   // console.log(user);
+     // console.log(user);
     res.redirect("/login");
 })
 
